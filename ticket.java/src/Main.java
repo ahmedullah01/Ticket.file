@@ -608,13 +608,13 @@ String[]  seatnumfor1 = {"1A","2A" ,"3A" ,"4A","5A","6A" ,"7A" ,"8A","9A","10A" 
                 return;
             }
 
-            if (count == 0) {
+            if (c == 0) {
                 System.out.println("No available airlines match your route and choice.");
                 return;
             }
 
             System.out.println("Available airlines:");
-            for (int i = 0; i < count; i++) {
+            for (int i = 0; i < c; i++) {
                 System.out.println((i + 1) + ". " + availableAirlines[i]);
             }
 
@@ -622,7 +622,7 @@ String[]  seatnumfor1 = {"1A","2A" ,"3A" ,"4A","5A","6A" ,"7A" ,"8A","9A","10A" 
             int opt = sc.nextInt();
             sc.nextLine(); // consume leftover newline
 
-            if (opt < 1 || opt > count) {
+            if (opt < 1 || opt > c) {
                 System.out.println("Invalid airline selection.");
                 return;
             }
